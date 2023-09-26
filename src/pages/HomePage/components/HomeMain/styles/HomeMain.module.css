@@ -1,0 +1,135 @@
+.main {
+	padding-top: 8rem;
+	background-image: url('../images/gradient.jpg');
+	background-position: 50%;
+	background-size: cover;
+	background-color: #fff;
+	position: relative;
+}
+
+.bgImage {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.75;
+}
+
+.container {
+	padding: 0 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 80rem;
+	margin: 0 auto;
+	position: relative;
+}
+.createForm {
+	color: #3f3f46;
+	padding: 6px 16px;
+	border: 1px solid rgb(161, 161, 170);
+	background-color: #fff;
+	border-radius: 100px;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+}
+.title {
+	margin-top: 1.5rem;
+	font-size: 4.5rem;
+	line-height: 1;
+	font-weight: 600;
+	color: #18181b;
+	text-align: center;
+}
+.title span {
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: var(--bg-gradient);
+}
+
+.description {
+	padding: 2.5rem 0px;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: rgb(39, 39, 42);
+	text-align: center;
+}
+.description span {
+	font-weight: 700;
+}
+
+.link {
+	color: #fff;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding: 0.625rem 2rem;
+	border-radius: 0.375rem;
+	background-image: var(--bg-gradient);
+}
+
+.freePlan {
+	color: rgb(82, 82, 91);
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	text-align: center;
+	margin-top: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.freePlan a {
+	text-decoration: underline;
+	color: rgb(39, 39, 42);
+	font-weight: 500;
+}
+.containerStars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.star:first-child {
+	margin-left: 5px;
+}
+.star {
+	width: 1rem;
+	height: auto;
+}
+.containerImg {
+	padding: 0.5rem;
+	padding-bottom: 0;
+	background-color: rgba(28, 25, 23, 0.05);
+	border: 1px solid rgba(28, 25, 23, 0.1);
+	border-bottom: 0px;
+	margin-top: 2rem;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	display: flex;
+}
+.containerImg img {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	width: 100%;
+	max-width: 960px;
+	aspect-ratio: auto 960/462;
+}
+
+@media screen and (max-width: 1020px) {
+	.title {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+	.description {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		padding: 1.5rem 0px;
+	}
+}

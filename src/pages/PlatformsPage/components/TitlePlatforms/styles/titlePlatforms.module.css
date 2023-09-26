@@ -1,0 +1,43 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+.containerTitle {
+	padding: 10rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 72rem;
+}
+.containerTitle h1 {
+	font-size: 3rem;
+	line-height: 1;
+	color: rgb(9, 9, 11);
+	font-weight: 600;
+	max-width: 42rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.containerTitle p {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	margin-top: 4rem;
+	color: rgb(39, 39, 42);
+	text-align: center;
+}
+
+@media screen and (max-width: 1020px) {
+	.containerTitle h1 {
+		font-size: 1.875rem;
+	}
+	.containerTitle p {
+		font-size: 1.125rem;
+	}
+	.containerTitle {
+		padding: 6rem 2rem;
+	}
+}

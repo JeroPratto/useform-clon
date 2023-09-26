@@ -1,0 +1,154 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-bottom: 1px solid rgb(228, 228, 231);
+	z-index: 999;
+}
+
+.container {
+	height: 35px;
+	width: 100%;
+	max-width: 80rem;
+	margin: 16px 0;
+	padding: 0px 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.containerLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.containerLogo {
+	height: 100%;
+}
+.logo {
+	height: 2rem;
+	aspect-ratio: auto 112/32;
+}
+.containerLoginAndNavigation {
+	height: 100%;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.containerNavigation {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	border-right: 1px solid rgba(161, 161, 170, 0.5);
+}
+.itemNavigation {
+	color: #000;
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin: 0 1rem;
+	text-align: center;
+}
+
+.btnLogin {
+	color: #000;
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin: 0 1rem;
+}
+
+.btnStar {
+	background-color: rgb(59, 130, 246);
+	border-radius: 0.375rem;
+	color: #fff;
+	margin-left: 0.5rem;
+	padding: 0.625rem 1rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+.btnMenu {
+	display: none;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+	.btnMenu {
+		display: flex;
+		border: none;
+		cursor: pointer;
+		padding: 0.375rem;
+		border-radius: 0.375rem;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+	}
+	.btnMenu img {
+		width: 1.5rem;
+		height: auto;
+	}
+	.containerLogoAndBtnMenu {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+	}
+	.containerLoginAndNavigation {
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: auto;
+		top: 50px;
+		display: none;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 1rem 2rem;
+		border-bottom: 1px solid rgb(228, 228, 231);
+	}
+	.containerNavigation {
+		display: flex;
+		flex-direction: column;
+		border: none;
+	}
+	.itemNavigation {
+		font-size: 1rem;
+		width: 100%;
+		margin: 0;
+		padding: 0.5rem 0;
+	}
+	.itemNavigation a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: start;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.btnStar {
+		display: none;
+	}
+	.containerLogin {
+		margin: 0;
+		padding: 0.5rem 0;
+	}
+	.btnLogin {
+		text-align: start;
+		font-size: 1rem;
+		margin: 0;
+	}
+	.open {
+		display: flex;
+	}
+}

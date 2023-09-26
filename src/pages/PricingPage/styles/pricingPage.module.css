@@ -1,0 +1,58 @@
+.container {
+	padding: 6rem 1.5rem 0 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 80rem;
+}
+.containerTitleAndDesc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.titlePrice {
+	color: rgb(37, 99, 235);
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+.containerTitleAndDesc h1 {
+	font-size: 3rem;
+	line-height: 1;
+	color: rgb(24, 24, 27);
+	font-weight: 700;
+	text-align: center;
+	margin-top: 1rem;
+}
+.description {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: rgb(82, 82, 91);
+	text-align: center;
+	margin: 1rem auto;
+}
+.description span {
+	color: rgb(37, 99, 235);
+	font-weight: 500;
+}
+.containerPriceCards {
+	display: grid;
+	padding: 2rem 0;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+	width: 100%;
+}
+@media screen and (max-width: 1020px) {
+	.containerPriceCards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+@media screen and (max-width: 640px) {
+	.containerPriceCards {
+		display: flex;
+		flex-direction: column;
+	}
+}
