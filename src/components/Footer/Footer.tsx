@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 					Create a form, embed it into your website and share it with your
 					clients, in minutes.
 				</p>
-				<Link to='/' className={styles.linkCall}>
+				<Link to='/login' className={styles.linkCall}>
 					Get started for free
 				</Link>
 			</div>

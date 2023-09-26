@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
 						<Link to={'/login'} className={styles.btnLogin}>
 							Sign In
 						</Link>
-						<Link to={'//login'} className={styles.btnStar}>
+						<Link to={'/login'} className={styles.btnStar}>
 							Get started for free
 						</Link>
 					</div>
