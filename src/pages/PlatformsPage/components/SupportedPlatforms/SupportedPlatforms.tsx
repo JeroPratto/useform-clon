@@ -9,8 +9,8 @@ const SupportedPlatforms: React.FC<SupportedPlatformsProps> = ({}) => {
 		<div className={styles.container}>
 			<h2 className={styles.title}>Supported platforms & guides</h2>
 			<div className={styles.containerSupported}>
-				{supported.map((urlImg) => (
-					<div className={styles.item}>
+				{supported.map((urlImg, index) => (
+					<div className={styles.item} key={index}>
 						<img src={urlImg} alt='' />
 					</div>
 				))}

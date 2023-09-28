@@ -19,8 +19,8 @@ const PricingPage: React.FC<PricingPageProps> = ({}) => {
 				</p>
 			</div>
 			<div className={styles.containerPriceCards}>
-				{plans.map((plan) => (
-					<PriceCard pricing={plan} />
+				{plans.map((plan, index) => (
+					<PriceCard pricing={plan} key={index} />
 				))}
 				<CustomPlan />
 			</div>

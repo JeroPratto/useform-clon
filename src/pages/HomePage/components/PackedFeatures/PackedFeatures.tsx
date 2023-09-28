@@ -12,8 +12,8 @@ const PackedFeatures: React.FC<PackedFeaturesProps> = ({}) => {
 				Useform makes it easy to create forms for any use-case, without code
 			</p>
 			<div className={styles.containerItems}>
-				{features.map((feature) => (
-					<div className={styles.item}>
+				{features.map((feature, index) => (
+					<div className={styles.item} key={index}>
 						<div className={styles.containerImg}>
 							<img src={feature.urlImage} alt='' />
 						</div>

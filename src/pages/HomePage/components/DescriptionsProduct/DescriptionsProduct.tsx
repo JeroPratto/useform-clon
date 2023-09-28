@@ -8,7 +8,7 @@ const DescriptionProduct: React.FC<DescriptionsProductProps> = ({}) => {
 	return (
 		<div className={styles.container}>
 			{descriptions.map((desc, index) => (
-				<div className={styles.containerItem}>
+				<div className={styles.containerItem} key={index}>
 					<p
 						className={`${styles.preTitle} ${
 							index % 2 === 0 ? '' : styles.reversePreTitle
@@ -26,8 +26,8 @@ const DescriptionProduct: React.FC<DescriptionsProductProps> = ({}) => {
 							<p className={styles.description}>{desc.description}</p>
 							<span className={styles.separator}></span>
 							<ul className={styles.list}>
-								{desc.list.map((item) => (
-									<li>
+								{desc.list.map((item, index) => (
+									<li key={index}>
 										<img src={check} alt='check' className={styles.check} />
 										{item}
 									</li>

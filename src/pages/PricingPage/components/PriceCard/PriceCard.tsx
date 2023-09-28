@@ -16,8 +16,8 @@ const PriceCard: React.FC<PriceCardProps> = ({ pricing }) => {
 			<h2 className={styles.name}>{pricing.name}</h2>
 			<p className={styles.description}>{pricing.description}</p>
 			<ul className={styles.list}>
-				{pricing.list.map((item) => (
-					<li className={styles.item}>
+				{pricing.list.map((item, index) => (
+					<li className={styles.item} key={index}>
 						<img
 							src={item.available ? check : noCheck}
 							alt={item.available ? 'available' : 'not available'}

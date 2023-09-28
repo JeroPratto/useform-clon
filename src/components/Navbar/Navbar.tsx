@@ -27,8 +27,8 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
 					}`}
 				>
 					<ul className={styles.containerNavigation}>
-						{links.map((link) => (
-							<li className={styles.itemNavigation}>
+						{links.map((link, index) => (
+							<li className={styles.itemNavigation} key={index}>
 								<Link to={link.href}>{link.text}</Link>
 							</li>
 						))}

@@ -29,12 +29,12 @@ const Footer: React.FC<FooterProps> = ({}) => {
 					</p>
 				</div>
 				<div className={styles.containerLists}>
-					{linkList.map((list) => (
-						<div className={styles.containerTitleAndList}>
+					{linkList.map((list, index) => (
+						<div className={styles.containerTitleAndList} key={index}>
 							<p className={styles.titleList}>{list.title}</p>
 							<ul className={styles.containerList}>
-								{list.list.map((link) => (
-									<li className={styles.itemList}>
+								{list.list.map((link, index) => (
+									<li className={styles.itemList} key={index}>
 										<Link to={link.href} className={styles.linkList}>
 											{link.text}
 										</Link>

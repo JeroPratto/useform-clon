@@ -35,8 +35,8 @@ const HomeMain: React.FC<HomeMainProps> = ({}) => {
 					</span>
 					<span className={styles.containerStars}>
 						Trusted by agencies & freelancers
-						{stars.map((star) => (
-							<img src={star} alt='star' className={styles.star} />
+						{stars.map((star, index) => (
+							<img src={star} alt='star' className={styles.star} key={index} />
 						))}
 					</span>
 				</p>

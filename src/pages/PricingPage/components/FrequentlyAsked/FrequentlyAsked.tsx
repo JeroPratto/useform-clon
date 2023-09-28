@@ -9,8 +9,12 @@ const FrequentlyAsked: React.FC<FrequentlyAskedProps> = ({}) => {
 	return (
 		<div className={styles.container}>
 			<h2>Frequently asked questions</h2>
-			{frequently.map((frequently) => (
-				<FrequentlyAccordion ask={frequently.ask} text={frequently.text} />
+			{frequently.map((frequently, index) => (
+				<FrequentlyAccordion
+					ask={frequently.ask}
+					text={frequently.text}
+					key={index}
+				/>
 			))}
 		</div>
 	)
